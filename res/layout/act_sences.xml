@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.king.demo.sence.GravityFrameLayout
+        android:id="@+id/mark_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" >
+        <TextView 
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/color_6293f9"
+	        android:textSize="@dimen/txt_large"
+	        android:gravity="center"
+	        android:text="今日推荐"
+	        android:background="@drawable/mark_bg" />
+    </com.king.demo.sence.GravityFrameLayout>
+
+    <com.king.demo.sence.GravityGridView
+		android:id="@+id/sence_grid"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/mark_lay"
+		android:background="@null"
+		android:fadeScrollbars="true"
+		android:fadingEdge="none"
+		android:numColumns="3"
+		android:scrollbarStyle="outsideOverlay" />
+    
+</RelativeLayout>
